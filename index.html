@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/meat.png" type="image/x-icon">
+    <title>Carne</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body data-bs-theme="light">
+
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-3" href="#"><img src="./img/meat.png" height="50" alt="açougue">&nbsp;Açougue</a>
+        <button class="border-0 p-0 shadow-none navbar-toggler pe-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fs-3"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header px-4">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./img/meat.png" alt="açougue">açougue</h5>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  </div></a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+      <section  class="banners banner-1 d-flex flex-column justify-content-center text-center">
+        <div class="px-2 banners-titulo bg-body-secondary py-5">
+          <h2 class="fw-bold">açougue</h2>
+          <p id="pro" class="mb-0 mt-3">teste</p>
+          
+        </div>
+      </section>
+<br id="sobre">
+      <section class="py-5">
+        <h2  class="text-center fw-bold pb-1">Sobre Nos</h2>
+        <div class="container d-flex justify-content-around flex-wrap">
+          <div class="card m-4" style="width: 20rem;">
+            <img src="./img/meat.png" class="card-img-top" alt="a">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">O Que é a açougue</h5>
+              <p class="card-text">O açougue é...</p>
+              <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas" data-bs-target="#canvas-1" aria-controls="offcanvasRight">Quero detalhes</a>
+            </div>
+          </div>
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="./img/meat.png" class="card-img-top" alt="a">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Quanto Custa</h5>
+              <p class="card-text">O Valor é...</p>
+              <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-2" aria-controls="offcanvasRight">Quero detalhes</a>
+            </div>
+          </div>
+
+      </section>
+
+      <section class="banners banner-2 d-flex flex-column justify-content-center">
+        <div class="px-2 banners-titulo bg-body-secondary text-center py-5">
+          <h2 class="fw-bold">teste</h2>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <h2 class="fw-bold text-center pb-1">carnes açougue</h2>
+        <div class="row mx-0">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1" style="width: 18rem;">
+                    <img src="./img/meat.png" class="card-img-top" alt="Foto">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">bovina</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2" style="width: 18rem;">
+                    <img src="./img/meat.png" class="card-img-top" alt="Foto.">
+                    <div class="card-body">
+                        <h3 class="card-text fw-bold text-center">porco</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-3" style="width: 18rem;">
+                    <img src="./img/meat.png" class="card-img-top" alt="Foto">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold text-nowrap">aves</h3>
+                    </div>
+                </div>
+            </div>
+
+      </section>
+
+      <section class="banners banner-3 d-flex flex-column justify-content-center">
+        <div class="px-2 banners-titulo bg-body-secondary text-center py-5">
+          <h2 class="fw-bold">Steste</h2>     
+        </div>
+      </section>
+
+      <section class="py-4 container">
+        <div class="row">
+          <div class="col-10 col-xl-8 mx-auto">
+            <div class="border border-2 rounded p-2">
+              <h3 class="fw-bold p-3">Entre em contato!</h3>
+              <form id="contato">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                  <label for="floatingNome">Nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                  <label for="floatingEmail">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+                  <label for="floatingTelefone">Telefone</label>
+                </div>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected>Preferência de contato:</option>
+                  <option value="1">WhatsApp</option>
+                  <option value="2">Email</option>
+                  <option value="3">Ligação</option>
+                </select>
+                <label for="nivel-satisfacao" class="form-label">Nível de satisfação:</label>
+                <input type="range" class="form-range input-range" id="nivel-satisfacao">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Deseja receber novidades por email?
+                  </label>
+                </div>
+                <button type="button" class="btn botao-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+      <footer class="text-center">
+        <section class="container p-4 pb-0">
+          <a class="btn" href="#!"><i class="bi bi-whatsapp fs-2"></i></a>
+          <a class="btn" href="#"><i class="bi bi-instagram fs-2"></i></a>
+          <a class="btn" href="#!"><i class="bi bi-facebook fs-2"></i></a>
+        </section>
+        <div class="p-4">
+            2025 <i class="bi bi-c-circle"></i> Desenvolvido açougue.
+        </div>
+    </footer>
+
+  <!-- Canvas 1 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">sobre</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             sobre  1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             teste
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            sobre  2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             teste
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            sobre 3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              teste
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Canvas 2 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Vantagens Assinatura</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              vantagem 1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             teste
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             vantagem 2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             teste
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             vantagem3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              teste
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 1 -->
+
+  
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Carne porco</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/meat.png" class="w-100" alt="Xícara de café preto">
+          <p>teste</p>
+          <p>teste</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Carne ave</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/meat.png" class="w-100" alt="Xícara de café preto">
+          <p>teste</p>
+          <p>teste</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3 -->
+
+  <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Carne bovinas</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./img/meat.png" class="w-100" alt="Xícara de café preto">
+          <p>teste</p>
+          <p>teste</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
